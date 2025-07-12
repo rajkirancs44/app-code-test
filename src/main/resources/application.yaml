@@ -6,11 +6,13 @@ server:
 
 deadcode:
   static-scan: true
-  repo: https://github.com/rajkirancs44/dead-code-analyzer.git
+  repo: https://github.com/rajkirancs44/app-code-test.git
   branch: main
   base-packages:
-    - com.citi.analyzer
+    - com.citi.test
   track-execution-time: true
   track-invocation-count: true
   analyzer-base-url: http://localhost:8081
   dump-interval-time: 100
+  stats-dump-interval-time: 180
+  stats-scan: true

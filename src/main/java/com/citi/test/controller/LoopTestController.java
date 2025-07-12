@@ -25,4 +25,16 @@ public class LoopTestController {
         int sum = IntStream.rangeClosed(1, 1000).sum();
         return ResponseEntity.ok(sum);
     }
+
+    @GetMapping("/substract2")
+    public ResponseEntity<Integer> subtract(int x , int y) {
+        int subtract = 0;
+        if(x>y) {
+            subtract = x - y;
+        }
+        else
+            subtract =   y- x;
+
+        return ResponseEntity.ok(subtract);
+    }
 }
